@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textViewDialogMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Please provide connection details"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editTextDialogServerAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Server IP or address">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextDialogServerPort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Server port"
+        android:inputType="number" />
+
+</LinearLayout>

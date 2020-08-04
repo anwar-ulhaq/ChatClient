@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controller.FragmentChat">
+
+<!--
+    <layout>
+        <data class = "ChatModelBinding">
+
+            <variable
+                name="chatModel"
+                type="com.example.chatclient.ViewModel.Chat_ViewModel"/>
+
+
+
+        </data>
+
+
+    </layout>
+-->
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/messageList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:scrollbars="vertical"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <!-- A horizontal line between the chatbox and RecyclerView -->
+    <View
+        android:id="@+id/centerLine"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="#dfdfdf"
+        app:layout_constraintBottom_toTopOf="@+id/layout_messageArea"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_messageArea"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:minHeight="48dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/viewBottomGap"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <EditText
+            android:id="@+id/txtMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="Enter message"
+            android:maxLines="6" />
+
+        <Button
+
+            android:id="@+id/btnSend"
+            android:layout_width="64dp"
+            android:layout_height="48dp"
+
+            android:layout_gravity="bottom"
+            android:text="Go"
+            android:gravity="center"
+            />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewBottomGap"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="#dfdfdf"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.chatclient.Controller.Fragment_Chat"
+        android:orientation="horizontal">
+
+
+
+        <imageButton
+                android:id="@+id/btnSend"
+
+
+                app:srcCompat="@android:drawable/ic_menu_send"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:layout_gravity="bottom" />
+
+        <ImageView
+            android:id="@+id/truiton_image"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/truiton"/>
+
+            android:layout_below="@id/truiton_image"
+            -->
+    <!--
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+
+        android:text="All Chat comes here"
+        android:textSize="30sp" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chatDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+
+        android:gravity="center_horizontal"
+
+        />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginBottom="0dp"/>
+
+    <LinearLayout
+        android:id="@+id/layout_messageArea"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:minHeight="48dp"
+        android:background="#ffffff">
+
+        <EditText
+            android:id="@+id/txtMessage"
+            android:hint="Enter message"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:maxLines="6"/>
+
+        <Button
+            android:id="@+id/btnSend"
+            android:text="SEND"
+            android:textSize="14dp"
+            android:clickable="true"
+            android:layout_width="64dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:layout_gravity="bottom" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+-->

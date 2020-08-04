@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ChatClient</string>
+    <string name="title_chat">Chat</string>
+    <string name="title_users">Users</string>
+    <string name="title_history">History</string>
+    <string name="title_activity_chat_room">ChatRoom</string>
+    <string name="title_activity_activity_network_connection">NetworkActivity</string>
+
+
+    <string name="prompt">No connection details found, please provide below.</string>
+    <string name="userprompt">User name not set yet, please enter a Nick name without any space.</string>
+</resources>
